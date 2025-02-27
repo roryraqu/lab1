@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <algorithm>
 
 std::string isPalindrom(std::string& string){
     std::string reverse_string;
