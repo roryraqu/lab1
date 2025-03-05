@@ -14,7 +14,7 @@ std::string isPalindrom(std::string& string){
         reverse_string += std::tolower(string[i]);
     }
     return string == reverse_string? "yes" : "no";
-}
+}}
 
 int main(){
     std::string string, result;
