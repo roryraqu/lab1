@@ -4,9 +4,11 @@
 
 std::string isPalindrom(std::string& string){
     std::string reverse_string;
+    std::transform(string.begin(), string.end(), string.begin(), [](char c){return std::tolower(c);});
+    //string.erase(std::remove_if(string.begin(), string.end(), [](char c){return !(std::isalnum(c));}), string.end());
     string.erase(std::remove(string.begin(), string.end(), ' '), string.end());
     for(int i = string.size()-1; i >= 0; --i){
-        reverse_string += string[i];
+        reverse_string += std::tolower(string[i]);
     }
     return string == reverse_string? "yes" : "no";
 }
