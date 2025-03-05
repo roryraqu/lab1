@@ -2,6 +2,7 @@
 #include <string>
 #include <algorithm>
 
+
 std::string isPalindrom(std::string& string){
     std::string reverse_string;
     std::transform(string.begin(), string.end(), string.begin(), [](char c){return std::tolower(c);});
