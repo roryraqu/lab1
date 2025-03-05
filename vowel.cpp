@@ -6,7 +6,7 @@ using namespace std;
 
 int main(){
     int count = 0;
-    string Gl_Alpha = "aeiouy"; //английские гласные)))
+    string Gl_Alpha = "aeiouy"; //английские гласные))
     string String;
     getline(cin, String);
     
